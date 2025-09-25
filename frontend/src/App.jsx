@@ -16,6 +16,10 @@ import EventDetails from "./pages/EventDetails";
 import CreateEvent from "./pages/CreateEvent";
 import Checkout from "./pages/Checkout";
 import BookEvent from "./pages/BookEvent";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
+import Help from "./pages/Help";
+
 
 // Unified Dashboard
 import Dashboard from "./pages/dashboards/Dashboard";
@@ -51,6 +55,9 @@ function App() {
       {/* Booking & Checkout */}
       <Route path="/book/:id" element={<Layout><BookEvent /></Layout>} />
       <Route path="/checkout/:id" element={<Layout><Checkout /></Layout>} />
+      <Route path="/forgot-password" element={<Layout><ForgotPassword /></Layout>} />
+      <Route path="/reset-password/:token" element={<Layout><ResetPassword /></Layout>} />
+      <Route path="/help" element={<Layout><Help /></Layout>} />
 
       {/* Auth */}
       <Route
@@ -74,6 +81,7 @@ function App() {
           </Layout>
         }
       />
+      
 
       {/* Catch-all redirect */}
       <Route path="*" element={<Navigate to="/" replace />} />
