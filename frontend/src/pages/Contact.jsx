@@ -318,7 +318,7 @@ export default function Contact() {
           </p>
           <ul className="space-y-4">
             <li>📍 Nairobi, Kenya</li>
-            <li>📧 support@tickewise.com</li>
+            <li>📧 support@EventAgents.com</li>
             <li>📞 +254 704 988 410</li>
           </ul>
 
